@@ -1,0 +1,12 @@
+{
+	"name": "cs-datafactoryv2-dev",
+	"properties": {
+		"globalParameters": {
+			"env": {
+				"type": "string",
+				"value": "dev"
+			}
+		}
+	},
+	"location": "eastus"
+}
