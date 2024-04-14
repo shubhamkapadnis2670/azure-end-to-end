@@ -1,0 +1,40 @@
+{
+	"name": "ds_adls_source_get",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_source",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "MySQL",
+				"fileSystem": "landing"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "month",
+				"type": "String"
+			},
+			{
+				"name": "Mmm",
+				"type": "String"
+			},
+			{
+				"name": "quarter",
+				"type": "String"
+			},
+			{
+				"name": "fiscal_year",
+				"type": "String"
+			}
+		]
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"name": "ds_input_sqldb",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sql_db",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"user_name": "shubhamkapadnis"
+			}
+		},
+		"parameters": {
+			"tablename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": {
+				"value": "@dataset().tablename",
+				"type": "Expression"
+			}
+		}
+	}
+}
